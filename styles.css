@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 0;
+    background-color: #007bff; /* Dark blue for navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f7b731; /* Gold color on hover */
+}
+
+/* Hero Section Styles */
+header {
+    background: #343a40; /* Dark gray background for hero section */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header .btn {
+    background-color: #f7b731; /* Gold button */
+    color: #333;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for section headers */
+}
+
+/* Experience and Project Cards */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue color for card titles */
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for skill titles */
+}
+
+/* Footer Styles */
+footer {
+    background: #343a40; /* Dark gray for footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .skill {
+        margin-bottom: 20px;
+    }
+}
