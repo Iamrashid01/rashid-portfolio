@@ -4,64 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rashid Ali Rabbani | IT Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Rashid Ali Rabbani</h1>
-        <p>Experienced IT Professional Specializing in Windows, VMware, and Azure Technologies</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rashid Ali Rabbani</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Highlights">Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Rashid Ali Rabbani, an experienced IT professional with a strong background in IT Service Management (ITSM), Windows, and VMware technologies.</p>
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Rashid Ali Rabbani</h1>
+            <p class="lead">Experienced IT Professional Specializing in Windows, VMware, and Azure Technologies</p>
+            <a href="#contact" class="btn btn-light btn-lg mt-3">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">Hello! I'm Rashid Ali Rabbani, an experienced IT professional with a strong background in IT Service Management (ITSM), Windows, and VMware technologies. Over the past two years, I've focused on optimizing infrastructure, managing vulnerabilities, and driving efficiency across both on-premises and cloud environments.</p>
+        </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Wintel System Administrator, Wipro (Sep 2021 - Present)</h3>
-        <ul>
-            <li>Managed IT services and operations, ensuring seamless service delivery.</li>
-            <li>L2 certified in Windows and VMware, responsible for server provisioning, upgrades, and decommissioning.</li>
-            <li>Successfully onboarded on-premises servers to Azure ARC for centralized management and governance.</li>
-        </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <div class="accordion" id="experienceAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Wintel System Administrator, Wipro (Sep 2021 - Present)
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Managing IT services and operations, ensuring seamless service delivery.</li>
+                                <li>L2 certified in Windows and VMware, responsible for server provisioning, upgrades, and decommissioning.</li>
+                                <li>Onboarded on-premises servers to Azure ARC for centralized management and governance.</li>
+                                <li>Implemented patching and vulnerability solutions, enhancing system security and compliance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Windows Server Management</li>
-            <li>VMware vSphere</li>
-            <li>Azure Cloud Services</li>
-            <li>Azure ARC</li>
-            <li>Vulnerability Management</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Windows Server Management</h4>
+                            <p class="card-text">Expert in managing Windows Server environments, both on-premises and in Azure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">VMware vSphere</h4>
+                            <p class="card-text">Experienced in VMware administration, including provisioning, upgrades, and maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Azure Cloud Services</h4>
+                            <p class="card-text">AZ-900 certified with hands-on experience in managing Azure services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Azure ARC</h4>
+                            <p class="card-text">Skilled in onboarding and managing servers through Azure ARC.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Patching and Vulnerability Management</h4>
+                            <p class="card-text">Expert in implementing and managing patching and vulnerability solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">PowerShell</h4>
+                            <p class="card-text">Proficient in automating tasks and managing servers using PowerShell scripting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Azure ARC Onboarding Project</h3>
-        <p>Onboarded on-premises servers to Azure ARC, enabling centralized management and improving system security compliance.</p>
+    <!-- Highlights Section -->
+    <section id="Highlights" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Highlights</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Azure ARC Onboarding Project</h4>
+                            <p class="card-text">Onboarded on-premises servers to Azure ARC, enabling centralized management and improving system security compliance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Patch Management Automation</h4>
+                            <p class="card-text">Automated patch management across servers using Jetpatch, significantly reducing manual effort and increasing compliance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:rashidj0001@gmail.com">rashidj0001@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/rashid-ali-rabbani-738936167" target="_blank">linkedin.com/in/rashid-ali-rabbani-738936167</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:rashidj0001@gmail.com">rashidj0001@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rashid-ali-rabbani-738936167" target="_blank">linkedin.com/in/rashid-ali-rabbani-738936167</a></p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Rashid Ali Rabbani. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Rashid Ali Rabbani. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
