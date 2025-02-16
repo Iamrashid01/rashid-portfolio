@@ -1,11 +1,15 @@
 /* Global Styles */
 body {
+<<<<<<< HEAD
     background: #0a192f;
     color: #ccd6f6;
+=======
+>>>>>>> 7bbd334ba8068c1fe144f86c419096ed70eddc77
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
 }
 
 /* Navbar Neon Effect */
@@ -155,6 +159,10 @@ body {
 header .btn {
     border-width: 2px;
     font-weight: 600;
+=======
+    background-color: #ffffff;
+    color: #333333;
+>>>>>>> 7bbd334ba8068c1fe144f86c419096ed70eddc77
 }
 
 .container {
@@ -165,6 +173,7 @@ header .btn {
 
 /* Navbar Styles */
 .navbar {
+<<<<<<< HEAD
     background-color: #0a192f !important;
     position: relative;
 }
@@ -182,15 +191,102 @@ header .btn {
 
 .navbar-nav .nav-link {
     color: #ccd6f6 !important;
+=======
+    margin-bottom: 0;
+    background-color: #007bff; /* Dark blue for navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+>>>>>>> 7bbd334ba8068c1fe144f86c419096ed70eddc77
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
+<<<<<<< HEAD
     color: #f7b731 !important;
+=======
+    color: #f7b731; /* Gold color on hover */
+}
+
+/* Hero Section Styles */
+header {
+    background: #007bff; /* Dark blue background for hero section */
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header .btn {
+    background-color: #f7b731; /* Gold button */
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for section headers */
+}
+
+/* Experience and Project Cards */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue color for card titles */
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for skill titles */
+>>>>>>> 7bbd334ba8068c1fe144f86c419096ed70eddc77
 }
 
 /* Footer Styles */
 footer {
+<<<<<<< HEAD
     background: #0a192f;
     color: #ccd6f6;
     text-align: center;
@@ -259,4 +355,26 @@ footer {
 
 #contact a:hover {
     text-decoration: underline;
+=======
+    background: #343a40; /* Dark gray for footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .skill {
+        margin-bottom: 20px;
+    }
+>>>>>>> 7bbd334ba8068c1fe144f86c419096ed70eddc77
 }
