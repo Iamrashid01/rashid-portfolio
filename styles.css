@@ -19,45 +19,43 @@ body {
     box-shadow: 0 0 20px rgba(247, 183, 49, 0.6);
 }
 
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #007bff, #f7b731, #007bff);
+    animation: neonGlow 3s linear infinite;
+}
+
+.navbar-nav .nav-link {
+    color: #ccd6f6 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f7b731 !important;
+}
+
 /* Card Neon Effects */
 .card, .accordion-item, .license-card {
-    border: 2px solid #f7b731 !important; /* Permanent neon border */
-    box-shadow: 0 0 15px rgba(247, 183, 49, 0.3); /* Permanent subtle glow */
+    border: 2px solid #f7b731 !important;
+    box-shadow: 0 0 15px rgba(247, 183, 49, 0.3);
     transition: all 0.3s ease;
-    background: #f0f4f8 !important; /* Light background */
+    background: #f0f4f8 !important;
     border-radius: 15px !important;
     position: relative;
     overflow: hidden;
-    margin-bottom: 25px; /* Consistent spacing */
+    margin-bottom: 25px;
 }
 
 .card:hover, .accordion-item:hover, .license-card:hover {
-    box-shadow: 0 0 25px rgba(247, 183, 49, 0.6); /* Stronger glow on hover */
+    box-shadow: 0 0 25px rgba(247, 183, 49, 0.6);
     transform: translateY(-5px);
 }
 
-/* Fix for 5th card spacing */
-.certifications-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px; /* Adjust spacing as needed */
-    padding: 20px 0;
-}
-
-/* Adjust grid spacing for smaller screens */
-@media (max-width: 992px) {
-    .certifications-grid {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .certifications-grid {
-        gap: 15px;
-    }
-}
-
-/* Neon Border Enhancement */
 .card::before, .accordion-item::before, .license-card::before {
     content: '';
     position: absolute;
@@ -89,7 +87,7 @@ body {
 
 /* Card Content Styling */
 #skills .card-body, .license-info {
-    color: #1a1a1a !important; /* Dark text */
+    color: #1a1a1a !important;
     padding: 20px;
 }
 
@@ -136,9 +134,21 @@ body {
 /* Certifications Section */
 .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
     padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .certifications-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .license-card {
@@ -163,32 +173,6 @@ header .btn {
     overflow: hidden;
 }
 
-/* Navbar Styles */
-.navbar {
-    background-color: #0a192f !important;
-    position: relative;
-}
-
-.navbar::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #007bff, #f7b731, #007bff);
-    animation: neonGlow 3s linear infinite;
-}
-
-.navbar-nav .nav-link {
-    color: #ccd6f6 !important;
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #f7b731 !important;
-}
-
 /* Footer Styles */
 footer {
     background: #0a192f;
@@ -204,13 +188,6 @@ footer {
     50% { opacity: 0.9; }
     100% { opacity: 0.6; }
 }
-
-@media (max-width: 768px) {
-    .card:hover, .accordion-item:hover, .license-card:hover {
-        transform: translateY(-3px);
-    }
-}
-
 
 /* Highlights Section */
 #Highlights .row {
@@ -241,22 +218,46 @@ footer {
 
 /* Specific style for the long content card */
 #Highlights .card.long-content:hover {
-    transform: translateY(-10px) scale(1.05); /* Lift and enlarge on hover */
-    box-shadow: 0 0 25px rgba(247, 183, 49, 0.6); /* Stronger glow on hover */
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px rgba(247, 183, 49, 0.6);
 }
 
 #contact i {
     margin-right: 10px;
     color: #007bff;
-    font-size: 1.5rem; /* Increase icon size */
+    font-size: 1.5rem;
 }
 
 #contact a {
     color: #007bff;
     text-decoration: none;
-    font-size: 1.2rem; /* Increase link text size */
+    font-size: 1.2rem;
 }
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+/* Adjustments for Mobile */
+@media (max-width: 768px) {
+    #skills .col-md-4, #Highlights .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card, .license-card {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
